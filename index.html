@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart System</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+  
+    <h1>🛒 Shopping Cart System</h1>
+
+  <div class="container">
+
+    <!-- PRODUCTS -->
+
+    <div class="products">
+
+      <!-- PRODUCT 1 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h2>Nike Shoes</h2>
+
+          <div class="price">₹2999</div>
+
+          <button class="btn"
+            onclick="addToCart('Nike Shoes',2999)">
+            Add to Cart
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 2 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h2>Smart Watch</h2>
+
+          <div class="price">₹4999</div>
+
+          <button class="btn"
+            onclick="addToCart('Smart Watch',4999)">
+            Add to Cart
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 3 -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h2>iPhone</h2>
+
+          <div class="price">₹79999</div>
+
+          <button class="btn"
+            onclick="addToCart('iPhone',79999)">
+            Add to Cart
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CART -->
+
+    <div class="cart">
+
+      <h2>🛍 Your Cart</h2>
+
+      <div id="cartItems">
+
+        <div class="empty">
+          Cart is Empty
+        </div>
+
+      </div>
+
+      <div class="total">
+        Total: ₹<span id="totalPrice">0</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
